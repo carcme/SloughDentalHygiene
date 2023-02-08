@@ -39,13 +39,15 @@ const NavModule = () => {
 
   const [colorChange, setColorchange] = useState(false)
   const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setColorchange(true)
-    } else {
-      setColorchange(false)
+    if (typeof window !== `undefined`) {
+      if (window.scrollY >= 80) {
+        setColorchange(true)
+      } else {
+        setColorchange(false)
+      }
     }
+    window.addEventListener("scroll", changeNavbarColor)
   }
-  window.addEventListener("scroll", changeNavbarColor)
 
   return (
     <NavModuleStyles>
