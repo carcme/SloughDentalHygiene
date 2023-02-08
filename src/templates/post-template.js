@@ -25,7 +25,7 @@ const PostTemplate = (contentfulPost) => {
           )}
         </PostSingleStyles>
       </section>
-      <LatestPosts title="Further reading from Barcadia (post-template.js)" />
+      <LatestPosts title="Further reading..." />
     </>
   )
 }

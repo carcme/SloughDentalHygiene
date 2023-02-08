@@ -16,10 +16,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        process.env.GATSBY_EMAILJS_SERVICE_ID,
+        process.env.GATSBY_EMAILJS_TEMPLATE_ID,
         form.current,
-        process.env.EMAILJS_PUBLIC_KEY
+        process.env.GATSBY_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
