@@ -9,16 +9,16 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Slough Dental Hygiene",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
+    description: "A dental hygiene site using GatsbyJS",
+    author: "Hammer3",
     telephoneNumber: "+44 7942 26489",
     emailContact: "clare@sloughdentalhygiene.co.uk",
     twitterUsername: "",
     facebookUsername: "SloughDentalHygiene",
     instagramUsername: "",
     linkedinUsername: "",
-    image: "/macbook-color.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    image: "/smile-1.png",
+    siteUrl: "sloughdentalhygiene.vercel.app",
     developerName: "Hammer3",
     developerUrl: "https://www.hammer3.de",
   },
@@ -46,6 +46,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
-    'gatsby-plugin-next',    
+    "gatsby-plugin-next",
   ],
 }

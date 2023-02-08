@@ -1,7 +1,7 @@
 {
-  "name": "barcadia",
+  "name": "slough-dental",
   "private": true,
-  "description": "A super-fast site using GatsbyJS",
+  "description": "A dental hygiene site using Gatsby",
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
