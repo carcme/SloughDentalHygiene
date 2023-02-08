@@ -8,13 +8,13 @@ const Contact = () => {
   const [btnText, setBtnText] = useState("Send Message")
   const form = useRef()
 
-  const sendEmail = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault()
 
     setDisableBtn("true")
     setBtnText("Sending...")
 
-    await emailjs
+    emailjs
       .sendForm(
         process.env.EMAILJS_SERVICE_ID,
         process.env.EMAILJS_TEMPLATE_ID,
