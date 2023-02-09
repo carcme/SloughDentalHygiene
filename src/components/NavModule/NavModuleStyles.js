@@ -10,10 +10,6 @@ export const NavModuleStyles = styled(motion.nav)`
     z-index: 100;
     padding: 20px var(--borderSpacing) 0 var(--borderSpacing);
 
-    // workout how to change color on scroll without using 'window' -- can use .nav.colorChange then
-    // background-color: rgb(0, 0, 0, 0.7);
-    // padding-bottom: 20px;
-
     @media (min-width: 1024px) {
       padding-top: 20px;
     }
@@ -45,14 +41,14 @@ export const NavModuleStyles = styled(motion.nav)`
     width: var(--menuWidth);
     transform: translateX(calc(var(--menuWidth) * -1));
     height: 100%;
-    top: 0;
+    top: 0px;
     bottom: 0;
     left: 0;
     position: fixed;
     z-index: 99;
-    padding: 30px var(--borderSpacing);
+    padding: 100px var(--borderSpacing);
     display: flex;
-    align-items: center;
+    align-items: start;
   }
 `
 

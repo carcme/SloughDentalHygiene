@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 :root {  
   --bannerTitle: 34px;
   --borderSpacing: 30px;
-  --menuWidth: 50vw;
+  --menuWidth: 90vw;
   --blockquote: 20px;
   --background: #1b1b1b;
   --primary: #ffc400;
@@ -23,7 +23,8 @@ export const GlobalStyle = createGlobalStyle`
   --gap: 40px;
   --sectionMargin: 60px;
 
-  @media(min-width:375px) {
+  @media(min-width:300px) {
+    --borderSpacing: 15px;
     --bannerTitle: 36px;    
     --h2: 22px;
     --h3: 21px;
@@ -45,6 +46,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @media(min-width:768px) {
+    --borderSpacing: 50px;
     --bannerTitle: 46px;    
     --blockquote: 26px;
     --p: 15px;
@@ -54,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
     --h5: 24px;
     --h6: 22px;
     --sectionMargin: 100px;
-    --menuWidth: 40vw;
+    --menuWidth: 50vw;
   }
 
   @media(min-width:1024px) {
@@ -66,11 +68,17 @@ export const GlobalStyle = createGlobalStyle`
     --h5: 27px;
     --h6: 25px;
     --sectionMargin: 180px;
-    --menuWidth: 30vw;
+    --menuWidth: 50vw;
   }
 
   @media(min-width:1200px) {
     --p: 17px;
+    --menuWidth: 40vw;
+  }
+
+  @media(min-width:1600px) {
+    --p: 17px;
+    --menuWidth: 35vw;
   }
 }
 

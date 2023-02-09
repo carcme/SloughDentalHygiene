@@ -4,6 +4,8 @@ import { ContactStyles } from "./ContactStyles"
 import Perk from "../PerksModule/Perk"
 
 const Contact = () => {
+  const END_POINT =
+    "https://public.herotofu.com/v1/3732d1b0-a854-11ed-a31e-753411848f80"
   const [status, setStatus] = useState()
 
   const sendEmail = (e) => {
@@ -24,7 +26,7 @@ const Contact = () => {
 
     Object.assign(data, injectedData)
 
-    fetch(process.env.HEROTOFU_FORM_ENDPOINT, {
+    fetch(END_POINT, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -72,7 +74,7 @@ const Contact = () => {
     <ContactStyles className="section">
       <form
         onSubmit={sendEmail}
-        action={process.env.HEROTOFU_FORM_ENDPOINT}
+        action={END_POINT}
         method="POST"
         target="_blank"
       >
