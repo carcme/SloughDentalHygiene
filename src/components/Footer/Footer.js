@@ -100,41 +100,41 @@ const Footer = () => {
                 <div class="box day">
                   <p className="day">Sa</p>
                 </div>
-                <div class="box open">
+                <div class="box open MON">
                   <p>10:00</p>
                 </div>
-                <div class="box open">
+                <div class="box open TUE">
                   <p>-</p>
                 </div>
-                <div class="box open">
+                <div class="box open WED">
                   <p>-</p>
                 </div>
-                <div class="box open">
+                <div class="box open THUR">
                   <p>10:00</p>
                 </div>
-                <div class="box open">
+                <div class="box open FRI">
                   <p>10:00</p>
                 </div>
-                <div class="box open">
-                  <p>10:00</p>
+                <div class="box open SAT">
+                  <p>10:30</p>
                 </div>
-                <div class="box close">
+                <div class="box close MON">
                   <p>20:00</p>
                 </div>
-                <div class="box close">
+                <div class="box close TUE">
                   <p>-</p>
                 </div>
-                <div class="box close">
+                <div class="box close WED">
                   <p>-</p>
                 </div>
-                <div class="box close">
+                <div class="box close THUR">
                   <p>20:00</p>
                 </div>
-                <div class="box close">
+                <div class="box close FRI">
                   <p>20:00</p>
                 </div>
-                <div class="box close">
-                  <p>15:30</p>
+                <div class="box close SAT">
+                  <p>15:00</p>
                 </div>
               </div>
             </div>

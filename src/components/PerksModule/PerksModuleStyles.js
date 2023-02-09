@@ -11,9 +11,8 @@ export const PerksModuleStyles = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    
+
     flex-grow: 1;
-    
   }
 
   .perks__image--bg {
@@ -79,6 +78,10 @@ export const PerkStyles = styled.aside`
   h3 {
     display: inline-block;
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+
+    span {
+      color: var(--primary);
+    }
   }
 
   p {

@@ -22,7 +22,7 @@ const AnimMain = ({ children }) => {
       transition={{ type: "ease", stiffness: 50, velocity: 50 }}
       style={{
         transition: "filter 0.3s ease",
-        filter: isOpen ? "blur(25px)" : "none",
+        filter: isOpen ? "blur(15px)" : "none",
       }}
     >
       {children}

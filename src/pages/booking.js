@@ -8,9 +8,12 @@ import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
 const contact = () => {
   return (
     <>
-      <Seo title="Contact" />
+      <Seo title="Booking" />
       <Layout>
-        <SimpleBanner title="Get in touch" introduction="We'll get back to you as soon as possible">
+        <SimpleBanner
+          title="Get in touch"
+          introduction="We'll get back to you as soon as possible"
+        >
           <StaticImage
             className="banner__image"
             src="../../static/booking.jpg"

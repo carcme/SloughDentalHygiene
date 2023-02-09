@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { motion } from "framer-motion"
 
-export const NavModuleStyles = styled.nav`
+export const NavModuleStyles = styled(motion.nav)`
   .nav {
     position: fixed;
     top: 0;
@@ -9,6 +9,10 @@ export const NavModuleStyles = styled.nav`
     width: 100%;
     z-index: 100;
     padding: 20px var(--borderSpacing) 0 var(--borderSpacing);
+
+    // workout how to change color on scroll without using 'window' -- can use .nav.colorChange then
+    // background-color: rgb(0, 0, 0, 0.7);
+    // padding-bottom: 20px;
 
     @media (min-width: 1024px) {
       padding-top: 20px;
@@ -19,15 +23,15 @@ export const NavModuleStyles = styled.nav`
     }
   }
 
-  .nav.colorChange{
-    background-color: rgb(0,0,0,0.7);
+  .nav.colorChange {
+    background-color: rgb(0, 0, 0, 0.7);
     padding-bottom: 20px;
     transition: background-color 1s ease;
 
     @media (min-width: 1440px) {
       padding-bottom: 40px;
     }
-}
+  }
 
   .container {
     display: flex;

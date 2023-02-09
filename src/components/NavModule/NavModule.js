@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import useFeaturedProduct from "../../hooks/use-featured-product"
+import useScrollPosition from "../useScrollPosition"
 import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
   NavModuleStyles,
@@ -37,21 +38,24 @@ const NavModule = () => {
 
   const { title } = UseSiteMetadata()
 
-  const [colorChange, setColorchange] = useState(false)
-  const changeNavbarColor = () => {
-    if (typeof window !== `undefined`) {
-      if (window.scrollY >= 80) {
-        setColorchange(true)
-      } else {
-        setColorchange(false)
-      }
-    }
-    window.addEventListener("scroll", changeNavbarColor)
-  }
+  // const [changeColor, setchangeColor] = useState(false)
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 80) {
+  //     setchangeColor(true)
+  //   } else {
+  //     setchangeColor(false)
+  //   }
+
+  //   window.addEventListener("scroll", changeNavbarColor)
+  // }
+
+  const scrollPosition = useScrollPosition()
+
+  console.log(scrollPosition)
 
   return (
     <NavModuleStyles>
-      <div className={colorChange ? "nav colorChange" : "nav"}>
+      <div className={scrollPosition > 200 ? "nav colorChange" : "nav"}>
         <div className="container">
           <HamburgerStyles
             initial="closed"
