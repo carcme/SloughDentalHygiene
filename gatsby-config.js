@@ -18,7 +18,7 @@ module.exports = {
     instagramUsername: "",
     linkedinUsername: "",
     image: "/smile-1.png",
-    siteUrl: "https://sloughdental.vercel.app",
+    siteUrl: "https://sloughdental.com/",
     developerName: "Hammer3",
     developerUrl: "https://www.hammer3.de",
   },
@@ -37,8 +37,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
+        host: "https://sloughdental.com/",
+        sitemap: "https://sloughdental.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
@@ -47,5 +47,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-next`,
+    `gatsby-plugin-gatsby-cloud`,
   ],
 }
