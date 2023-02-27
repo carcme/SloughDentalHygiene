@@ -13,7 +13,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           children
         ) : (
 
-          <StaticImage 
+          <StaticImage
             className="banner__image"
             imgClassName="banner__image--content"
             src="../../../static/smile-1.png"
@@ -39,6 +39,12 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
               </h2>
             )}
             <div className="banner__btns">
+              <Button
+                className="btn"
+                text="Book Appointment"
+                as={Link}
+                to="/booking"
+              />
               {enquire && (
                 <Button
                   className="btn"
@@ -47,7 +53,6 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
                   to="/contact"
                 />
               )}
-              {/* <Button onClick={scrollToArea} text="Learn More" /> */}
             </div>
           </div>
         </div>

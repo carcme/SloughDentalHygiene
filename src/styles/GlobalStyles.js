@@ -56,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
     --h5: 24px;
     --h6: 22px;
     --sectionMargin: 100px;
-    --menuWidth: 50vw;
+    --menuWidth: 60vw;
   }
 
   @media(min-width:1024px) {

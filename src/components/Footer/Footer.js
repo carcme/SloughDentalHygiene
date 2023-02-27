@@ -68,11 +68,11 @@ const Footer = () => {
         )}
 
         {siteMeta.telephoneNumber ||
-        siteMeta.emailContact ||
-        siteMeta.twitterUsername ||
-        siteMeta.facebookUsername ||
-        siteMeta.instagramUsername ||
-        siteMeta.linkedinUsername ? (
+          siteMeta.emailContact ||
+          siteMeta.twitterUsername ||
+          siteMeta.facebookUsername ||
+          siteMeta.instagramUsername ||
+          siteMeta.linkedinUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
               <Link to="/contact">
@@ -134,7 +134,7 @@ const Footer = () => {
                   <p>20:00</p>
                 </div>
                 <div class="box close SAT">
-                  <p>15:00</p>
+                  <p>15:30</p>
                 </div>
               </div>
             </div>

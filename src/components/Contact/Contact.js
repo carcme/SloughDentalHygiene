@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import Button from "../Button/Button"
+import { Link } from "gatsby"
 import { ContactStyles } from "./ContactStyles"
-import Perk from "../PerksModule/Perk"
+import { RiCheckboxCircleLine } from "react-icons/ri"
 
 const Contact = () => {
   const END_POINT =
@@ -63,9 +64,25 @@ const Contact = () => {
   if (status) {
     return (
       <>
-        <ContactStyles className="section">
-          <Perk title="Thankyou" content="We'll be in touch soon" />
-        </ContactStyles>
+        <div
+          style={{
+            marginTop: "80px",
+            textAlign: "center",
+          }}
+        >
+          <RiCheckboxCircleLine
+            style={{
+              fontSize: "128px",
+              color: "var(--primary)",
+            }}
+          />
+          <h1>Got your message</h1>
+          <p>
+            Thank you for getting in touch us. We will get back to you shortly.
+          </p>
+
+          <Button className="btn" text="Back to Homepage" as={Link} to="/" />
+        </div>
       </>
     )
   }
@@ -106,7 +123,17 @@ const Contact = () => {
           required
         ></textarea>
         {/* <input disabled={disableBtn} type="submit" value={disableBtn ? "Sending":"Send"} /> */}
-        <Button type="submit" value="Send" text="Send Message" required />
+        <div className="banner__btns">
+          <Button type="submit" value="Send" text="Send Message" required />
+
+          <Button
+            className="btn"
+            text="Book Appointment"
+            as={Link}
+            to="/booking"
+          />
+
+        </div>
       </form>
     </ContactStyles>
   )

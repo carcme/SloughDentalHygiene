@@ -36,6 +36,7 @@
     "gbimage-bridge": "^0.2.0",
     "gsap": "^3.9.0",
     "react": "^17.0.2",
+    "react-calendly": "^4.1.1",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",

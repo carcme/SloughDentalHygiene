@@ -48,4 +48,19 @@ export const ContactStyles = styled.section`
   textarea {
     margin-bottom: var(--gap);
   }
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    &.-right {
+      margin-left: var(--margin);
+    }
+    &.-left {
+      margin-right: var(--margin);
+    }
+  }
+  .banner__btns {
+    display: flex;
+    justify-content: space-between;
+  }
 `

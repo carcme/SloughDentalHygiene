@@ -16,6 +16,10 @@ export const menuItems = [
     text: "contact",
   },
   {
+    path: "/booking",
+    text: "Online Booking",
+  },
+  {
     path: "/news",
     text: "news",
   },
